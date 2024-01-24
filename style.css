@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap");
+:root{
+    --orange:#f2c14e;
+    --box:#2d414b;
+
+}
+
+body {
+    background:#37505c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: 'Finger Paint', sans-serif;
+    color:#f2c14e;
+    overflow: hidden;
+    }
+    input[type=text] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 3px solid#37505c;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+        outline: none;
+        font-family: 'Finger Paint', sans-serif;
+      }
+      
+      input[type=text]:focus {
+        border: 3px solid #2d414b;
+      }
+    #game{
+        display:none;
+    }
+    #login{
+        padding-top: 100px;
+    }
+    .container {
+    text-align: center;
+    }
+
+    .board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    margin: 20px 0;
+    }
+
+    .cell {
+    width: 100px;
+    height: 100px;
+    border: 2px solid var(--orange);
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    }
+
+    .cell:hover {
+    background-color: var(--box);
+    }
+
+    .status {
+    font-size: 24px;
+    margin-bottom: 20px;
+    }
+
+    .reset-button,
+    .restart-button {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: var(--orange);
+    color: #37505c;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: 'Finger Paint', sans-serif;
+    }
+
+    .reset-button:hover, 
+    .restart-button:hover {
+        background-color: #f0b733;
+        transition: 0.3s linear;
+    }
+    #start-btn{
+        font-size: 15px;
+        padding: 10px 20px;
+        background-color: var(--orange);
+        color: #37505c;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        font-family: 'Finger Paint', sans-serif;
+    }
