@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic-Tac-Toe</title>
+    <style>
+    </style>
+</head>
+<body>
+    <div id="login">
+    <div id="login-container">
+        <h2 class="Lcolour">Login</h2>
+        <div class="part1">
+            <label for="player1">Player 1 Name:</label>
+            <input type="text" id="player1" size="30" placeholder="Enter Player 1 Name">
+
+        </div>
+        <div class="part2">
+            <label for="player2">Player 2 Name:</label>
+            <input type="text" id="player2" size="30" placeholder="Enter Player 2 Name">
+
+        </div>
+        </div>
+
+        <button id="start-btn" onclick="startGame()">START GAME</button>
+    </div>
+    <div id="game">
+    <div class="container">
+        <h1>TIC TAC TOE</h1>
+        <div class="board">
+            <div class="cell" id="0"></div>
+            <div class="cell" id="1"></div>
+            <div class="cell" id="2"></div>
+            <div class="cell" id="3"></div>
+            <div class="cell" id="4"></div>
+            <div class="cell" id="5"></div>
+            <div class="cell" id="6"></div>
+            <div class="cell" id="7"></div>
+            <div class="cell" id="8"></div>
+        </div>
+        <!-- Game Result -->
+        <div class="result"></div>
+        <button class="reset-button" onclick="resetNew()">RESET GAME</button>
+        <button class="restart-button" onclick="restartNew()">RESTART GAME</button>
+        <h1 id="winnerBox"></h1>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
