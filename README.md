@@ -1,6 +1,3 @@
-Sure, here's a brief README file content for a Tic Tac Toe project developed using HTML, CSS, and JavaScript:
-
----
 
 # Tic Tac Toe Game
 
